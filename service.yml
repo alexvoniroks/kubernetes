@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Service
 metadata:
-  name: nginx-demo-2-service
-  namespace: nginx-demo-2
+  name: nginx-demo-service
+  namespace: nginx-demo
   labels:
-    app: nginx-demo-2
+    app: nginx-demo
   spec:
     type: ClusterIP
     ports:
     - port: 80
       name: http
     selector:
-      app: nginx-demo-2
+      app: nginx-demo
       
